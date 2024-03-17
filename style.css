@@ -1,0 +1,126 @@
+
+:root{
+  --color-text-head: rgb(252, 253, 247);
+  --color-text-general: rgb(27, 31, 43);
+
+  --color-plan: rgb(121, 135, 172);
+  --color-starter: rgb(79, 98, 141); 
+  --color-econom: rgb(47, 65, 115);
+  --color-standart: rgb(22, 41, 84);
+  --color-professional: rgb(7, 21, 58);
+
+  --color-dark: rgb(219, 219, 219);
+  --color-normal: rgb(231, 231, 231);
+  --color-light: rgb(243, 243, 243);
+  
+  --color-border: rgb(211, 211, 211);
+  --color-button: #6e686a;
+
+  --border-radius: 10px;
+
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+table{
+  min-width: 700px;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  color: var(--color-text-general);
+  border-collapse: collapse;
+}
+
+thead{
+  color: var(--color-text-head);
+}
+thead tr:first-child{
+  font-size: 18px;
+}
+thead th h2{
+  font-size: 18px;
+}
+thead th h2+p{
+  font-size: 40px;
+  margin-bottom: 0;
+}
+thead th h2+p+p{
+  font-size: 18px;
+  margin-top: 4%;
+}
+thead tr th:first-child{
+  width: 25%;
+  background-color: var(--color-plan);
+  border-top-left-radius: var(--border-radius);
+}
+thead tr th:nth-child(2){
+  background-color: var(--color-starter);
+}
+thead tr th:nth-child(3){
+  background-color: var(--color-econom);
+}
+thead tr th:nth-child(4){
+  background-color: var(--color-standart);
+}
+thead tr th:last-child{
+    background-color: var(--color-professional);
+    border-top-right-radius: var(--border-radius);
+}
+
+
+
+tbody th{
+  padding: 1em;
+  text-align: left;
+}
+tbody td{
+  text-align: center;
+}
+tbody tr:first-child td:not(:last-child){
+  text-transform: uppercase;
+}
+tbody tr:nth-child(2){
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(odd)>*:nth-child(odd){
+  background-color: var(--color-dark);
+}
+tbody tr:nth-child(even)>*:nth-child(odd){
+  background-color: var(--color-normal)
+}
+tbody tr:nth-child(even)>*:nth-child(even){
+  background-color: var(--color-light);
+}
+tbody tr:nth-child(odd)>*:nth-child(even){
+  background-color: var(--color-normal);
+}
+
+
+
+tfoot th{
+  padding: 1em;
+  text-align: center;
+}
+
+tfoot th:nth-child(odd){
+  background-color: var(--color-dark);
+}
+tfoot th:nth-child(even){
+  background-color: var(--color-normal);
+}
+tfoot th:first-child{
+  border-bottom-left-radius: var(--border-radius);
+}
+tfoot th:last-child{
+  border-bottom-right-radius: var(--border-radius);
+}
+tfoot button{
+  width: 100px;
+  height: 40px;
+  background-color: var(--color-border);
+  color: var(--color-button);
+  border-color: var(--color-border);
+  text-transform: uppercase;
+}
+
